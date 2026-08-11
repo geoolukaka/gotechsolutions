@@ -1,0 +1,73 @@
+/* GoTech Solutions - shared custom styles */
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.doc-shadow,
+.ambient-shadow {
+    box-shadow: 0 10px 40px rgba(0, 37, 64, 0.05);
+}
+
+.ghost-card {
+    position: absolute;
+    inset: 0;
+    background: white;
+    border: 1px solid #E4E9EA;
+    border-radius: 0.25rem;
+    z-index: -1;
+    transform: rotate(-1.5deg);
+    opacity: 0.6;
+}
+
+.form-field-transition {
+    transition: border-color 0.3s ease;
+}
+.form-field-transition:focus {
+    border-bottom-color: #09533b;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Mobile nav menu */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+}
+.mobile-menu.open {
+    display: flex;
+}
+
+/* Active nav link */
+.nav-link.active {
+    color: #003a28;
+    border-bottom: 2px solid #003a28;
+    padding-bottom: 4px;
+}
+
+/* Form status message */
+.form-status {
+    display: none;
+    padding: 12px 16px;
+    border-radius: 0.25rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 14px;
+}
+.form-status.show {
+    display: block;
+}
+.form-status.success {
+    background: #e6f4ee;
+    color: #09533b;
+    border: 1px solid #09533b;
+}
+.form-status.error {
+    background: #ffdad6;
+    color: #93000a;
+    border: 1px solid #ba1a1a;
+}
+
+button[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
